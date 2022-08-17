@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body background>
+<div class="container-md" id="mainc">
+
+    <section id="heading">
+      <img src="pexels-josh-sorenson-976873.jpg" width="315px" style="border-radius: 10%;">
+      <p class="h3">Ping Pong Score Keeper</p>
+    </section>
+
+    <p class="h1">
+      <span id="ans1" class="text-danger">0</span>
+      <span id="ans3"> TO </span>
+      <span id="ans2" class="text-warning">0</span>
+    </p>
+
+    Use the buttons below to update score
+
+    <section id="ddown">
+    Playing to: <div class="btn-group"><button id = "ddb" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Enter the game point</button>
+        <ul class="dropdown-menu" id="ddu">
+          <li><a class="dropdown-item">5</a></li>
+          <li><a class="dropdown-item">10</a></li>
+          <li><a class="dropdown-item">15</a></li>
+          <li><a class="dropdown-item">20</a></li>
+        </ul>
+    </div>
+    <div class="alert alert-secondary" role="alert" id="alert">
+      Enter the game point first!
+    </div>
+  </section>
+
+    <div class="btn-group" role="group" >
+        <button type="button" class="btn btn-outline-danger" id="b1">+1 Player 1</button>
+        <button type="button" class="btn btn-outline-primary" id="b2">RESET</button>
+        <button type="button" class="btn btn-outline-warning" id="b3">+1 Player 2</button>
+    </div>
+</div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
